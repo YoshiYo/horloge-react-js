@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Appli d'horloge</title>
+</head>
+<body>
+        <div class="row container-app">
+            <div class="col s12 m6 l3"></div>
+            <div class="col s12 m6 l6 tab-app">
+                <ul class="tabs">
+                    <li class="tab col s3" id="time"><i class="small material-icons">access_alarm</i></li>
+                    <li class="tab col s3" id="countdown"><i class="small material-icons">timelapse</i></li>
+                    <li class="tab col s3" id="stopwatch"><i class="small material-icons">av_timer</i></li>
+                    <li class="tab col s3" id="alarm"><i class="small material-icons">add_alarm</i></li>
+                </ul>
+            </div>
+            <div class="col s12 m6 l3"></div>
+        </div>
+
+        <script src="/src/time.js"></script>
+        <script src="/src/countdown.js"></script>
+        <script src="/src/stopwatch.js"></script>
+        <script src="/src/alarm.js"></script>
+</body>
+</html>
