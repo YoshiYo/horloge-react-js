@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
@@ -13,18 +14,27 @@
             <div class="col s12 m6 l3"></div>
             <div class="col s12 m6 l6 tab-app">
                 <ul class="tabs">
-                    <li class="tab col s3" id="time"><i class="small material-icons">access_alarm</i></li>
-                    <li class="tab col s3" id="countdown"><i class="small material-icons">timelapse</i></li>
-                    <li class="tab col s3" id="stopwatch"><i class="small material-icons">av_timer</i></li>
-                    <li class="tab col s3" id="alarm"><i class="small material-icons">add_alarm</i></li>
+                    <li class="tab col s3" id="time"><a href="#test1"><i class="small material-icons">access_alarm</i></a></li>
+                    <li class="tab col s3" id="countdown"><a href="#test2"><i class="small material-icons">timelapse</i></a></li>
+                    <li class="tab col s3" id="stopwatch"><a href="#test3"><i class="small material-icons">av_timer</i></a></li>
+                    <li class="tab col s3" id="alarm"><a href="#test4"><i class="small material-icons">add_alarm</i></a></li>
                 </ul>
+                <div class="col s12 m6 l3"></div>
+                <div id="test1" class="col s12">Test 1</div>
+                <div id="test2" class="col s12">Test 2</div>
+                <div id="test3" class="col s12">Test 3</div>
+                <div id="test4" class="col s12">Test 4</div>
             </div>
-            <div class="col s12 m6 l3"></div>
         </div>
 
         <script src="/src/time.js"></script>
         <script src="/src/countdown.js"></script>
         <script src="/src/stopwatch.js"></script>
         <script src="/src/alarm.js"></script>
+        <script type="javascript">
+        $(document).ready(function(){
+          $('ul.tabs').tabs();
+        });
+        </script>
 </body>
 </html>
