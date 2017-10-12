@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.18.13",
-    "materialize-css": "^0.100.2"
+    "materialize-css": "^0.100.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "^1.0.14"
   }
 }
